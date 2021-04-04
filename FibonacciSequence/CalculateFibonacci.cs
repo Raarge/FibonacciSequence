@@ -8,8 +8,11 @@ namespace FibonacciSequence
 {
     public static class CalculateFibonacci
     {
+        
         public static int CalculatFibonacciAt(int numOfFibonacci)
         {
+            Globals.fibCount = Globals.fibCount + 1;
+
             if (numOfFibonacci < 2)
                 return numOfFibonacci;
             else
